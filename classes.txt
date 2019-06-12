@@ -1,0 +1,13 @@
+# from http://starling.rinet.ru/new100/sound.pdf
+P p b f v
+T t d θ ð
+C ʒ č ǯ s z ʃ
+K k g
+J y
+W w ʍ
+M m
+N n ŋ
+L l
+R r ɹ
+# The S-class can be divided into the S-class proper (front fricatives: s z š ž …)
+# and the Ʒ-class (front aff ricates: c ʒ č ǯ …)

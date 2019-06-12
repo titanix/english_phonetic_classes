@@ -1,0 +1,27 @@
+digraph doc
+{
+    rankdir="LR";
+    cmu_dict[label="cmudict-0.7b.txt",shape=box];
+    cmu_exe[label="cmu.exe"];
+    cmu_ipa[label="cmu_ipa.txt",shape=box];
+
+    cmu_dict -> cmu_exe;
+    cmu_exe -> cmu_ipa;
+
+    classes_txt[label="classes.txt",shape=box];
+    classes_exe[label="classes.exe"];
+
+    ngsl_txt[label="ngsl.txt",shape=box];
+    ngsl_ipa_exe[label="ngsl_ipa.exe"];
+    ngsl_ipa_txt[label="ngsl_ipa.txt",shape=box];
+
+    ngsl_txt -> ngsl_ipa_exe;
+    cmu_ipa -> ngsl_ipa_exe;
+    ngsl_ipa_exe -> ngsl_ipa_txt;
+
+    ngsl_ipa_txt -> classes_exe;
+    classes_txt -> classes_exe;
+
+    final_output[label="final_output.txt",shape=box];
+    classes_exe -> final_output;
+}
